@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/3fbf002c8e.js" crossorigin="anonymous"></script>
+    <!-- Add this in the <head> section of your HTML -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+    <div id="particles-js">
+        <script src="particles.js"></script>
+        <script src="app.js"></script>
+    </div>
+    <section id="header">
+        <div class="container">
+            <nav>
+                <img src="eyey3.png" class="logo">
+
+                <ul id="sidemenu">
+                   <li><a href="#header">Home</a></li>
+                   <li><a href="#about">About</a></li>
+                   <li><a href="#services">Services</a></li>
+                   <li><a href="#contact">Contact</a></li>
+                   <li><a href="#portfolio">Portfolio</a></li>
+                   <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <section class="header-text">
+                <p>Aiyanur Rahman</p>
+                <h1>Frontend Developer & <br><span2>UI/UX </span2><span> Designer</span></h1>
+            </section>
+        </div>
+    </section>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="ayan.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitile">About Me</h1>
+                    <p id="typed-paragraph"></p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web App Interfaces</li>
+                            <li><span>Web Develoment</span><br>Web App Development</li>
+                            <li><span>Video Editing</span><br>Professional Video Editing</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Current</span><br>Eylons Footwear</li>
+                            <li><span>2019-2021</span><br>IT Division</li>
+                            <li><span>Partnership</span><br>QSS North Carolina</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018</span><br>UI/UX Design Training at ETX Institute,London</li>
+                            <li><span>2020</span><br>Bachelors In Cse From United International University</li>
+                            <li><span>Higher Secondary Certificate</span><br>Metropoliton College,Dhaka</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitile">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Transforming concepts into visually stunning websites. 
+                        My focus is on creating user-centric interfaces that blend aesthetics with seamless functionality, 
+                        delivering an impactful online presence.</p>
+                        <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Specializing in UI/UX design, I craft immersive digital experiences. 
+                        From intuitive wireframes to visually appealing prototypes, my designs prioritize user satisfaction, 
+                        blending creativity and usability seamlessly</p>
+                        <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-photo-film"></i>
+                    <h2>Video Editing</h2>
+                    <p>Elevate your content with professional video editing. I bring creativity and precision to every project, ensuring a polished and engaging final product that captivates your audience.
+                        Embrace a design journey that merges creativity with usability, creating a lasting impact on your users.</p>
+                        <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitile">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="works1.jpg">
+                    <div class="layer">
+                        <h3>Web Development</h3>
+                        <p>Frontend Develoment & Modern Designs</p>
+                        <a href="https://ayaneklectik.github.io/eylon/#home"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png">
+                    <div class="layer">
+                        <h3>Business E-comerce</h3>
+                        <p>The App That Connects People Around The Globe
+                            Download The App from Play-Store.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work3.jpg">
+                    <div class="layer">
+                        <h3>Video Editing</h3>
+                        <p>Modern Edits For Socials And PR's</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitile">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> eklectikbbx@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +8801820350351</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/aiyanur-rahman-556170285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://instagram.com/eklectikbbx?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/aiyanurrahman.aryan"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://join.skype.com/invite/vWfzYGpIL12v"><i class="fa-brands fa-skype"></i></a>
+                    </div>
+                    <a href="AiyanurRahmanCVFile.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message"  rows="6" placeholder="Leave Your Message For Ayaanur"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright©EklectikProductions</p>
+        </div>
+    </div>
+</div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+    
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+
+        // Add event listeners to close the menu when clicking on any item in the menu
+        var menuItems = sidemenu.querySelectorAll("a"); // Adjust the selector based on your HTML structure
+
+        for (var i = 0; i < menuItems.length; i++) {
+            menuItems[i].addEventListener("click", function () {
+                closemenu();
+            });
+        }
+    }
+
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxQgKmxwkOOe1xPbI2j4AmYpDZwz00SmXtyolb_A4uax2tLaKVQY3DtgIUsiZf95Cz0/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+   <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var typed = new Typed('#typed-paragraph', {
+            strings: ["I am a dynamic UI/UX designer and frontend developer. With a keen eye for aesthetics and a knack for coding, I bridge the gap between design and functionality. Dedicated to crafting immersive digital experiences that resonate with users and exceed expectations."],
+            typeSpeed: 40, // typing speed in milliseconds
+            showCursor: true, // show blinking cursor
+            cursorChar: '|', // cursor character
+            onComplete: function (self) {
+                // Restart after 45 seconds
+                setTimeout(function () {
+                    self.reset();
+                }, 45000);
+            },
+        });
+    });
+</script>
+
+
+</body>
+</html>
