@@ -251,6 +251,7 @@ p {
 }
 
 .work img {
+    height: 100%;
     width: 100%;
     border-radius: 10px;
     display: block;
@@ -260,7 +261,7 @@ p {
 .layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #993406);
+    background: linear-gradient(rgba(0,0,0,0.6), #06995c);
     border-radius: 10px;
     position: absolute;
     left: 0;
